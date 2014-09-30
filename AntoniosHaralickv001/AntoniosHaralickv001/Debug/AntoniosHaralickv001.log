@@ -1,0 +1,21 @@
+﻿Build started 9/30/2014 4:52:38 PM.
+     1>Project "C:\Projects\EigenTextures\AntoniosHaralickv001\AntoniosHaralickv001\AntoniosHaralickv001.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\opencv\build\include /IC:\Projects\EigenTextures\LibAntonio /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\LibAntonio\IO_functions.cpp
+         IO_functions.cpp
+     1>c:\projects\eigentextures\libantonio\io_functions.cpp(170): error C2664: 'HANDLE FindFirstFileW(LPCWSTR,LPWIN32_FIND_DATAW)' : cannot convert argument 1 from 'const char *' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\projects\eigentextures\libantonio\io_functions.cpp(178): error C2664: 'void std::list<std::string,std::allocator<_Ty>>::push_back(const _Ty &)' : cannot convert argument 1 from 'WCHAR [260]' to 'std::string &&'
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+                 Reason: cannot convert from 'WCHAR [260]' to 'std::string'
+                 No constructor could take the source type, or constructor overload resolution was ambiguous
+     1>c:\projects\eigentextures\libantonio\io_functions.cpp(179): error C2664: 'BOOL FindNextFileA(HANDLE,LPWIN32_FIND_DATAA)' : cannot convert argument 2 from 'WIN32_FIND_DATA *' to 'LPWIN32_FIND_DATAA'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>Done Building Project "C:\Projects\EigenTextures\AntoniosHaralickv001\AntoniosHaralickv001\AntoniosHaralickv001.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.03
