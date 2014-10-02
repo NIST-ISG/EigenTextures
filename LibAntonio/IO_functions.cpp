@@ -7,8 +7,6 @@
 #include<string>
 //#include<sstream>
 #include<list>
-#include <iostream>
-#include <fstream>
 #include <Windows.h>
 #include "parameter_classes.h"
 //#pragma hdrstop
@@ -164,10 +162,11 @@ void search_filenames(list <string>& filename_list, string search_string, string
 	not_found = false;
 	string namefile1 = namefile1_path + search_string;
 
-	WIN32_FIND_DATA fd;
-	const char* namefile1_ch = new char[50];
-	namefile1_ch = namefile1.c_str();
-	HANDLE h = FindFirstFile(namefile1_ch, &fd);
+	WIN32_FIND_DATAA fd;
+	//const char* namefile1_ch = new char[50];
+	//namefile1_ch = namefile1.c_str();
+	//HANDLE h = FindFirstFile(namefile1_ch, &fd);
+	HANDLE h = FindFirstFileA(namefile1.c_str(), &fd);
 	if(h == INVALID_HANDLE_VALUE)
 	{
 		cout << "no files found!\n";
