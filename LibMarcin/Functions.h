@@ -32,5 +32,8 @@ float MeanEnergyCalculaton(Mat ImIn, Mat Roi);
 
 Mat MeanEnergyImage(Mat ImIn, Mat Roi);
 
+float MeanAbsCalculaton(Mat ImIn, Mat Roi);
+Mat AbsImage(Mat ImIn, Mat Roi);
+
 int MaskImageInPseudocolors(Mat ImIn, Mat Roi, unsigned char grayLevel);
 #endif

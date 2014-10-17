@@ -2,7 +2,7 @@
 #include "opencv2\highgui\highgui.hpp"
 #include "opencv2\imgproc\imgproc.hpp"
 #include "opencv2\contrib\contrib.hpp"
-#include "math.h"
+#include <math.h>
 #include <iostream>
 #include "Functions.h"
 
@@ -695,6 +695,78 @@ int MaskImageInPseudocolors(Mat ImIn, Mat Roi, unsigned char grayLevel)
 		}
 	}
 	return 1;
+}
+
+//-----------------------------------------------------------------------------------------------------------------
+float MeanAbsCalculaton(Mat ImIn, Mat Roi)
+{
+	int maxX, maxY;// maxXm1, maxYm1;
+	maxX = ImIn.cols;
+	maxY = ImIn.rows;
+
+	int maxXRoi, maxYRoi;// maxXm1, maxYm1;
+	maxXRoi = Roi.cols;
+	maxYRoi = Roi.rows;
+
+	if ((maxX != maxXRoi) | (maxY != maxYRoi))
+		return -1;
+	//	maxXm1 = maxX - 1;
+	//	maxYm1 = maxY - 1;
+
+	float *wImIn = (float*)ImIn.data;
+	int pointsCount = 0;
+	unsigned short *wRoi = (unsigned short*)Roi.data;
+	double absVal = 0;
+	for (int y = 0; y < maxY; y++)
+	{
+		for (int x = 0; x < maxX; x++)
+		{
+			if (*wRoi == 1)
+			{
+				absVal += (double)(abs(*wImIn));
+				pointsCount++;
+			}
+
+			wImIn++;
+			wRoi++;
+		}
+	}
+	return (float)(absVal / double(pointsCount));
+}
+// ----------------------------------------------------------------------------------------------------------
+Mat AbsImage(Mat ImIn, Mat Roi)
+{
+	int maxX, maxY;// maxXm1, maxYm1;
+	maxX = ImIn.cols;
+	maxY = ImIn.rows;
+
+	int maxXRoi, maxYRoi;// maxXm1, maxYm1;
+	maxXRoi = Roi.cols;
+	maxYRoi = Roi.rows;
+
+	Mat AbsIm = Mat::zeros(maxY, maxX, CV_32F);
+
+	if ((maxX != maxXRoi) | (maxY != maxYRoi))
+		return AbsIm;
+	//	maxXm1 = maxX - 1;
+	//	maxYm1 = maxY - 1;
+
+	float *wAbsIm = (float*)AbsIm.data;
+	float *wImIn = (float*)ImIn.data;
+	unsigned short *wRoi = (unsigned short*)Roi.data;
+	double energy = 0;
+	for (int y = 0; y < maxY; y++)
+	{
+		for (int x = 0; x < maxX; x++)
+		{
+			if (*wRoi == 1)
+				*wAbsIm = abs(*wImIn);
+			wAbsIm++;
+			wImIn++;
+			wRoi++;
+		}
+	}
+	return AbsIm;
 }
 // ----------------------------------------------------------------------------------------------------------
 
