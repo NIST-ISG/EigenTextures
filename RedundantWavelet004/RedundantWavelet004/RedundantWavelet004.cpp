@@ -22,6 +22,7 @@ int main(int argc, char* argv[])
 	string InFolderName, OutFolderName;
 	string StrTemp;
 	string OutFileNameExtension = ".bmp";
+	string FileNameExtension = ".tif";
 
 	bool displayResult = 0;
 	bool saveResult = 0;
@@ -29,7 +30,7 @@ int main(int argc, char* argv[])
 
 	cout << "\n";               
 
-	// arguments read and decode
+	// arguments read and decode 
 	if (argc < 5)
 	{
 		cout << "\nTo few arguments.";
@@ -90,7 +91,7 @@ int main(int argc, char* argv[])
 	// read first file
 	WIN32_FIND_DATAA FindFileData;
 	HANDLE hFind;
-	hFind = FindFirstFileA((InFolderName + "*.bmp").c_str(), &FindFileData);
+	hFind = FindFirstFileA((InFolderName + "*" + FileNameExtension).c_str(), &FindFileData);
 	if (hFind == INVALID_HANDLE_VALUE)
 	{
 		cout << " file not found";
@@ -148,6 +149,7 @@ int main(int argc, char* argv[])
 		// output string 
 		string WaveletEnergies = "File Name: " + InFileName + "\n";
 		WaveletEnergies += "Scale\tLL\tHL\tLH\tHH\n";
+		cout << WaveletEnergies;
 
 		// Strings for common outputs
 		string WavEnLL, WavEnHL, WavEnLH, WavEnHH;
@@ -190,21 +192,25 @@ int main(int argc, char* argv[])
 			energy = MeanEnergyCalculaton(ImLL, Roi);
 			WaveletEnergies += std::to_string(energy) + "\t";
 			WavEnLL += std::to_string(energy) + "\t";
+			cout << std::to_string(energy) + "\t";
 
 			energy = MeanEnergyCalculaton(ImHL, Roi);
 			WaveletEnergies += std::to_string(energy) + "\t";
 			WavEnHL += std::to_string(energy) + "\t";
+			cout << std::to_string(energy) + "\t";
 
 			energy = MeanEnergyCalculaton(ImLH, Roi);
 			WaveletEnergies += std::to_string(energy) + "\t";
 			WavEnLH += std::to_string(energy) + "\t";
+			cout << std::to_string(energy) + "\t";
 
 			energy = MeanEnergyCalculaton(ImHH, Roi);
 			WaveletEnergies += std::to_string(energy) + "\t";
 			WavEnHH += std::to_string(energy) + "\t";
+			cout << std::to_string(energy) + "\t";
 
 			WaveletEnergies += "\n";
-
+			cout << "\n";
 
 			// display and save images
 			if (displayResult || saveResult)
@@ -280,9 +286,9 @@ int main(int argc, char* argv[])
 					string OutFileName = OutFolderName + FileNameBase + "Scale" + std::to_string(scale) + "Band" + "HH" + OutFileNameExtension;
 					imwrite(OutFileName, ImShow);
 				}
-				cout << scale << "\n";
+				
 				if (displayResult)
-					waitKey(0);
+					waitKey(100);
 			}
 		}
 		// save energies file

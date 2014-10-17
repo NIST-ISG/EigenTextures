@@ -706,20 +706,46 @@ int main(int argc, const char* argv[])
 
 			if (par2_yn == 1) {
 				// in this case the best matching angle is computed
-				int num_ang = 0; for (double a = minang_text; a <= maxang_text; a += angoffset_text) { num_ang++; }
-				double** contrast_mat = new double*[num_offset]; for (int i = 0; i<num_offset; i++) { *(contrast_mat + i) = new double[num_ang]; }
-				double** energy_mat = new double*[num_offset]; for (int i = 0; i<num_offset; i++) { *(energy_mat + i) = new double[num_ang]; }
-				double** homogeneity_mat = new double*[num_offset]; for (int i = 0; i<num_offset; i++) { *(homogeneity_mat + i) = new double[num_ang]; }
-				double** correlation_mat = new double*[num_offset]; for (int i = 0; i<num_offset; i++) { *(correlation_mat + i) = new double[num_ang]; }
-				int* answ_Haralick = new int[num_offset]; int* answ_Haralick_occurrence = new int[num_ang];
-				double* mean_Haralick = new double[num_offset]; double* std_Haralick = new double[num_offset];
+				int num_ang = 0; 
+				for (double a = minang_text; a <= maxang_text; a += angoffset_text)
+				{
+					num_ang++; 
+				}
+				double** contrast_mat = new double*[num_offset]; 
+				for (int i = 0; i<num_offset; i++)
+				{ 
+					*(contrast_mat + i) = new double[num_ang]; 
+				}
+				double** energy_mat = new double*[num_offset];
+				for (int i = 0; i<num_offset; i++)
+				{
+					*(energy_mat + i) = new double[num_ang];
+				}
+				double** homogeneity_mat = new double*[num_offset];
+				for (int i = 0; i<num_offset; i++)
+				{
+					*(homogeneity_mat + i) = new double[num_ang]; 
+				}
+				double** correlation_mat = new double*[num_offset];
+				for (int i = 0; i<num_offset; i++)
+				{
+					*(correlation_mat + i) = new double[num_ang]; 
+				}
+				int* answ_Haralick = new int[num_offset]; 
+				int* answ_Haralick_occurrence = new int[num_ang];
+				double* mean_Haralick = new double[num_offset]; 
+				double* std_Haralick = new double[num_offset];
 				double* extr_val_Haralick = new double[num_offset];
-				for (int i = 0; i<num_ang; i++) { *(answ_Haralick_occurrence + i) = 0; }
+				for (int i = 0; i<num_ang; i++)
+				{
+					*(answ_Haralick_occurrence + i) = 0; 
+				}
 
 				for (int i = 0; i<num_offset; i++) {
 					cout << "image\t" << count_Haralick << " offset\t" << i << endl;
 					int count_ang = 0;
-					for (double a = minang_text; a <= maxang_text; a += angoffset_text) {
+					for (double a = minang_text; a <= maxang_text; a += angoffset_text) 
+					{
 						Mat* co_occurrence_mat_curr =
 							get_co_occurrence_mat(*(offset_list + i), a, num_bins2, max_val2, min_val2, im_curr);
 						get_co_occurrence_mat_props(co_occurrence_mat_curr, *(*(contrast_mat + i) + count_ang), *(*(energy_mat + i) + count_ang),

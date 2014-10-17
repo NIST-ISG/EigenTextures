@@ -1,11 +1,34 @@
-﻿Build started 10/1/2014 5:25:01 PM.
+﻿Build started 10/6/2014 4:20:44 PM.
      1>Project "C:\Projects\EigenTextures\AntoniosHaralickv001\AntoniosHaralickv001\AntoniosHaralickv001.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\opencv\build\include /IC:\Projects\EigenTextures\LibAntonio /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\LibAntonio\IO_functions.cpp AntoniosHaralickv001.cpp
-         IO_functions.cpp
-         Generating Code...
-         Skipping... (no relevant changes detected)
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\opencv\build\include /IC:\Projects\EigenTextures\LibAntonio /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AntoniosHaralickv001.cpp
          AntoniosHaralickv001.cpp
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(174): warning C4996: 'mkdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _mkdir. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\direct.h(140) : see declaration of 'mkdir'
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(511): warning C4996: 'mkdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _mkdir. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\direct.h(140) : see declaration of 'mkdir'
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(926): warning C4996: 'mkdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _mkdir. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\direct.h(140) : see declaration of 'mkdir'
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(1140): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(1141): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(1147): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(1148): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(1181): warning C4996: 'mkdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _mkdir. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\direct.h(140) : see declaration of 'mkdir'
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(1217): warning C4996: 'mkdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _mkdir. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\direct.h(140) : see declaration of 'mkdir'
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(1259): warning C4996: 'mkdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _mkdir. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\direct.h(140) : see declaration of 'mkdir'
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(1309): warning C4996: 'mkdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _mkdir. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\direct.h(140) : see declaration of 'mkdir'
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(1440): warning C4996: 'mkdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _mkdir. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\direct.h(140) : see declaration of 'mkdir'
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(1476): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(1480): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(326): warning C4101: 'temp_double' : unreferenced local variable
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(326): warning C4101: 'temp_int' : unreferenced local variable
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(398): warning C4101: 'temp_double' : unreferenced local variable
+     1>c:\projects\eigentextures\antoniosharalickv001\antoniosharalickv001\antoniosharalickv001.cpp(398): warning C4101: 'temp_int' : unreferenced local variable
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Projects\EigenTextures\AntoniosHaralickv001\Debug\AntoniosHaralickv001.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\opencv\build\x86\vc12\lib opencv_core249d.lib opencv_highgui249d.lib opencv_imgproc249d.lib opencv_contrib249d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Projects\EigenTextures\AntoniosHaralickv001\Debug\AntoniosHaralickv001.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Projects\EigenTextures\AntoniosHaralickv001\Debug\AntoniosHaralickv001.lib" /MACHINE:X86 Debug\IO_functions.obj
          Debug\my_functions.obj
@@ -16,4 +39,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.52
+Time Elapsed 00:00:02.11
