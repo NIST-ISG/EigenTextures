@@ -27,7 +27,7 @@ int main(int argc, char* argv[])
 	string InFolderName, OutFolderName;
 	string StrTemp;
 	string OutFileNameExtension = ".bmp";
-	string FileNameExtension = ".tiff";
+	string FileNameExtension = ".tif";
 
 	string InStr;
 
