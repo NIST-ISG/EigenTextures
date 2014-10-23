@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-<<<<<<< HEAD
     <LocalDebuggerCommandArguments>Y Y Y C:\EigenTexturesData\ForHaralick001\ C:\EigenTexturesData\OutTemp001\</LocalDebuggerCommandArguments>
-=======
-    <LocalDebuggerCommandArguments>Y Y Y E:\EigentextureImages\ E:\EigentextureImages\</LocalDebuggerCommandArguments>
->>>>>>> cbae8a8720c28fc135a5e24ab7184627dda7ccbb
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>
