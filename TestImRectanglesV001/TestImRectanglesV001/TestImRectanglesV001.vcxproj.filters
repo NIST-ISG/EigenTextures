@@ -15,18 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="TestImRectanglesV001.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Lib\StringFcLib.cpp">
+    <ClCompile Include="..\..\LibMarcin\StringFcLib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Lib\StringFcLib.h">
+    <ClInclude Include="..\..\LibMarcin\StringFcLib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

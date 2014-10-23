@@ -20,8 +20,8 @@ int main(int argc, char* argv[])
 	FolderName = "C:\\EigenTexturesData\\ForWavelet001\\";
 	FileNameBase = "Rectange001";
 	FileNameExtension = ".bmp";
-	bool saveResult = 1;
-	bool displayResult = 0;
+	bool saveResult = 0;
+	bool displayResult = 1;
 	
 	int maxX, maxY;
 	maxX = 256;

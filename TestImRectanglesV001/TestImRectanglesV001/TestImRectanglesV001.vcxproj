@@ -52,7 +52,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\opencv\build\include;C:\Projects\EigenTextures\Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\opencv\build\include;C:\Projects\EigenTextures\LibMarcin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -79,14 +79,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Lib\StringFcLib.cpp" />
+    <ClCompile Include="..\..\LibMarcin\StringFcLib.cpp" />
     <ClCompile Include="TestImRectanglesV001.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Lib\StringFcLib.h" />
+    <ClInclude Include="..\..\LibMarcin\StringFcLib.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

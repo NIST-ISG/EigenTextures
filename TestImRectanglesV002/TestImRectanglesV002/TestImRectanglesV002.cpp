@@ -19,8 +19,8 @@ int main(int argc, char* argv[])
 	FolderName = "C:\\EigenTexturesData\\ForHaralick001\\";
 	FileNameBase = "Rectange008";
 	FileNameExtension = ".tif";
-	bool saveResult = 1;
-	bool displayResult = 0;
+	bool saveResult = 0;
+	bool displayResult = 1;
 
 	int spacingX = 32;
 	int spacingY = 90;

@@ -27,7 +27,7 @@ int main(int argc, char* argv[])
 	string InFolderName, OutFolderName;
 	string StrTemp;
 	string OutFileNameExtension = ".bmp";
-	string FileNameExtension = ".tiff";
+	string FileNameExtension = ".tif";
 
 	string InStr;
 
@@ -36,6 +36,7 @@ int main(int argc, char* argv[])
 	bool commonResult = 0;
 	bool outLocal = 0;
 	bool outScreen = 0;
+	bool goThru = 1;
 
 	int binCount = 16;
 	int ofset = 10;
@@ -246,8 +247,10 @@ int main(int argc, char* argv[])
 					imshow("Kernel", Kernel);
 
 
-					waitKey(0);
-
+					if(goThru)
+						waitKey(100);
+					else
+						waitKey(0);
 				}
 
 			}
