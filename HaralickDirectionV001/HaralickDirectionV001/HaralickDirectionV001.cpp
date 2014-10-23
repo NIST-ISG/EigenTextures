@@ -19,7 +19,7 @@
 using namespace cv;
 using namespace std;
 
-const int stepNr = 15;
+const int stepNr = 180;
 
 int main(int argc, char* argv[])
 {
@@ -40,7 +40,7 @@ int main(int argc, char* argv[])
 
 	int binCount = 16;
 	int ofset = 10;
-	float angleStep = 11.25;
+	float angleStep = 1;
 	
 	cout << "\n";
 
@@ -202,7 +202,9 @@ int main(int argc, char* argv[])
 			OutLocal += "\t";
 		}
 		OutLocal += "\n";
-		for (int offset = 4; offset <= 32; offset *= 2)
+
+// ofset loop
+		for (int offset = 1; offset <= 32; offset += 1) 
 		{
 			for (int angleIndex = 0; angleIndex < stepNr; angleIndex++)
 			{

@@ -11,7 +11,7 @@ Mat KernelPrepare(int offset, float angle)
 	Mat Kernel = Mat::zeros(size, size,CV_32F);
 	Kernel.at<float>(center + offset, center) = 1;
 	Mat rot_mat = getRotationMatrix2D(Point(center,center), (double)angle, 1);
-	warpAffine(Kernel, Kernel, rot_mat, Kernel.size(),INTER_AREA );
+	warpAffine(Kernel, Kernel, rot_mat, Kernel.size(),INTER_LINEAR );
 	return Kernel;
 
 }
