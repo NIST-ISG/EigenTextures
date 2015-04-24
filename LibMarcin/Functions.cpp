@@ -179,7 +179,7 @@ Mat PrepareColorScale(double min, double max, int maxX)
 {
 	Mat ColorScale = Mat::zeros(256, maxX, CV_8U);
 	unsigned char *wColorScale = ColorScale.data;
-	for (int y = 0; y < 256; y++)
+	for (int y = 255; y >= 0; y--)
 	{
 		for (int x = 0; x < maxX; x++)
 		{
@@ -194,9 +194,9 @@ Mat PrepareColorScale(double min, double max, int maxX)
 	string MaxTxt = std::to_string((int)max);
 	Point minPos, maxPos;
 	minPos.x = 16;
-	minPos.y = 16;
+	minPos.y = 250;
 	maxPos.x = 16;
-	maxPos.y = 250;
+	maxPos.y = 20;
 
 	putText(ImShow, MinTxt, minPos, FONT_HERSHEY_SIMPLEX, 0.8, Scalar(255, 255, 255));
 	putText(ImShow, MaxTxt, maxPos, FONT_HERSHEY_SIMPLEX, 0.8, Scalar(255, 255, 255));
