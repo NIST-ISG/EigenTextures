@@ -1,0 +1,40 @@
+﻿Build started 30.12.2015 15:36:13.
+     1>Project "D:\ProjectsNist\RevisitDirectionalityResultsV001\RevisitDirectionalityResultsV001\RevisitDirectionalityResultsV001.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\opencv\build\include /ID:\ProjectsLib\LibMarcin /ID:\ProjectsLib\tinyxml /I"C:\Boost\include\boost-1_60" /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt ..\..\..\ProjectsLib\LibMarcin\ParamFromXML.cpp ..\..\..\ProjectsLib\LibMarcin\StringFcLib.cpp ..\..\..\ProjectsLib\tinyxml\tinystr.cpp ..\..\..\ProjectsLib\tinyxml\tinyxml.cpp ..\..\..\ProjectsLib\tinyxml\tinyxmlerror.cpp ..\..\..\ProjectsLib\tinyxml\tinyxmlparser.cpp RevisitDirectionalityResultsV001.cpp
+         RevisitDirectionalityResultsV001.cpp
+     1>RevisitDirectionalityResultsV001.cpp(111): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>RevisitDirectionalityResultsV001.cpp(216): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>RevisitDirectionalityResultsV001.cpp(222): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>RevisitDirectionalityResultsV001.cpp(228): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>RevisitDirectionalityResultsV001.cpp(234): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>RevisitDirectionalityResultsV001.cpp(317): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>RevisitDirectionalityResultsV001.cpp(327): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>RevisitDirectionalityResultsV001.cpp(332): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>RevisitDirectionalityResultsV001.cpp(337): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>RevisitDirectionalityResultsV001.cpp(359): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>RevisitDirectionalityResultsV001.cpp(369): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>RevisitDirectionalityResultsV001.cpp(374): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>RevisitDirectionalityResultsV001.cpp(379): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         tinyxmlparser.cpp
+         tinyxmlerror.cpp
+         tinyxml.cpp
+         tinystr.cpp
+         StringFcLib.cpp
+         ParamFromXML.cpp
+     1>..\..\..\ProjectsLib\LibMarcin\ParamFromXML.cpp(852): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ProjectsNist\RevisitDirectionalityResultsV001\x64\Debug\RevisitDirectionalityResultsV001.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\opencv\build\x64\vc12\lib /LIBPATH:C:\Projects\EigenTextures\EigenTextures\LibMarcin /LIBPATH:C:\Boost\lib opencv_core2411d.lib opencv_highgui2411d.lib opencv_imgproc2411d.lib opencv_contrib2411d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\ProjectsNist\RevisitDirectionalityResultsV001\x64\Debug\RevisitDirectionalityResultsV001.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ProjectsNist\RevisitDirectionalityResultsV001\x64\Debug\RevisitDirectionalityResultsV001.lib" /MACHINE:X64 x64\Debug\ParamFromXML.obj
+         x64\Debug\StringFcLib.obj
+         x64\Debug\tinystr.obj
+         x64\Debug\tinyxml.obj
+         x64\Debug\tinyxmlerror.obj
+         x64\Debug\tinyxmlparser.obj
+         x64\Debug\RevisitDirectionalityResultsV001.obj
+         RevisitDirectionalityResultsV001.vcxproj -> D:\ProjectsNist\RevisitDirectionalityResultsV001\x64\Debug\RevisitDirectionalityResultsV001.exe
+     1>Done Building Project "D:\ProjectsNist\RevisitDirectionalityResultsV001\RevisitDirectionalityResultsV001\RevisitDirectionalityResultsV001.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.48
