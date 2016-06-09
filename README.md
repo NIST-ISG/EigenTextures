@@ -1,4 +1,5 @@
 EigenTextures
 =============
 
-This project is about decomposing texture images to primitives 
+This repository has been moved to https://github.com/marcinkociolek/ProjectsDirectionalityDetection
+ 
